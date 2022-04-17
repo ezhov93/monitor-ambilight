@@ -1,3 +1,14 @@
+# Created by https://www.gitignore.io/api/qt,platformio,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=qt,platformio,visualstudiocode
+
+### PlatformIO ###
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
+.pio
+
+### Qt ###
 # C++ objects and libs
 *.slo
 *.lo
@@ -6,7 +17,6 @@
 *.la
 *.lai
 *.so
-*.so.*
 *.dll
 *.dylib
 
@@ -29,8 +39,6 @@ ui_*.h
 *.jsc
 Makefile*
 *build-*
-*.qm
-*.prl
 
 # Qt unit tests
 target_wrapper.*
@@ -51,4 +59,15 @@ compile_commands.json
 # QtCreator local machine specific files for imported projects
 *creator.user*
 
-*_qmlcache.qrc
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/qt,platformio,visualstudiocode
